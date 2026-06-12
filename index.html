@@ -547,6 +547,13 @@ font-size: 42px; font-weight: 800;
 letter-spacing: -.05em; color: var(--navy);
 line-height: 1;
 }
+  .stat-prefix {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-right: 6px;
+  vertical-align: baseline;
+}
 .stat-num em { color: var(--teal); font-style: normal; }
 .stat-label { font-size: 14px; color: var(--muted); margin-top: 6px; font-weight: 500; }
 
@@ -1328,7 +1335,10 @@ function home() { return `
        <div class="stat-label">Referenz-Stilrichtungen</div>
      </div>
      <div class="stat-card reveal reveal-delay-1">
-       <div class="stat-num">ab 499<em>€</em></div>
+       <div class="stat-num">
+  <span class="stat-prefix">ab</span>
+  499<em>€</em>
+</div>
        <div class="stat-label">Einstiegspreis für den Starter</div>
      </div>
      <div class="stat-card reveal reveal-delay-2">
@@ -1675,7 +1685,11 @@ function preise() { return `
    <div class="price-card reveal">
      <h3>Starter</h3>
      <p>Für Selbstständige und kleine Betriebe, die schnell professionell sichtbar werden möchten.</p>
-     <div class="price-num">ab 499 <span class="price-unit">€ einmalig</span></div>
+     div class="price-num">
+  <span class="price-prefix">ab</span>
+  499
+  <span class="price-unit">€ einmalig</span>
+</div>
      <ul class="price-list">
        <li><span class="check">✓</span> Onepager mit bis zu 5 Bereichen</li>
        <li><span class="check">✓</span> Mobil optimiertes Design</li>
@@ -1710,7 +1724,11 @@ function preise() { return `
    <div class="price-card reveal reveal-delay-2">
      <h3>Premium</h3>
      <p>Für einen besonders hochwertigen und umfassenden Auftritt mit stärkerer visueller Ausarbeitung.</p>
-     <div class="price-num">ab 1.499 <span class="price-unit">€ einmalig</span></div>
+     div class="price-num">
+  <span class="price-prefix">ab</span>
+  1499
+  <span class="price-unit">€ einmalig</span>
+</div>
      <ul class="price-list">
        <li><span class="check">✓</span> Mehrseitige Website mit Premium-Look</li>
        <li><span class="check">✓</span> Individuelle Abschnitte und Animationen</li>
