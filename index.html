@@ -823,6 +823,13 @@ margin: 24px 0 6px; line-height: 1;
 list-style: none; margin: 24px 0 28px;
 display: flex; flex-direction: column; gap: 11px;
 }
+  .price-prefix {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-right: 6px;
+  vertical-align: baseline;
+}
 .price-list li {
 font-size: 14.5px; color: var(--text);
 display: flex; gap: 10px; align-items: flex-start;
@@ -1684,7 +1691,11 @@ function preise() { return `
      <div class="popular-badge">⭐ Beliebt</div>
      <h3>Business</h3>
      <p>Für Unternehmen, die Leistungen, Referenzen und Kontaktwege ausführlicher darstellen möchten.</p>
-     <div class="price-num">ab 899 <span class="price-unit">€ einmalig</span></div>
+     <div class="price-num">
+  <span class="price-prefix">ab</span>
+  899
+  <span class="price-unit">€ einmalig</span>
+</div>
      <ul class="price-list">
        <li><span class="check">✓</span> Startseite plus bis zu 4 Unterseiten</li>
        <li><span class="check">✓</span> Individuelles Layout nach Branche</li>
@@ -1698,7 +1709,7 @@ function preise() { return `
    <!-- Premium -->
    <div class="price-card reveal reveal-delay-2">
      <h3>Premium</h3>
-     <p>Für einen besonders hochwertigen Auftritt mit stärkerer visueller Ausarbeitung.</p>
+     <p>Für einen besonders hochwertigen und umfassenden Auftritt mit stärkerer visueller Ausarbeitung.</p>
      <div class="price-num">ab 1.499 <span class="price-unit">€ einmalig</span></div>
      <ul class="price-list">
        <li><span class="check">✓</span> Mehrseitige Website mit Premium-Look</li>
